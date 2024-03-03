@@ -1,0 +1,191 @@
+@font-face {
+    font-family: pixel;
+    src: url('../../04B_30__.TTF');
+}
+*{
+    margin: 0;
+    padding: 0; /* Устанавливаем box-sizing: border-box для всех элементов */
+    font-family: pixel;
+}
+
+header {
+    background-color: #131313;
+    padding: 7px 0; /* Отступы сверху и снизу */
+    font-family: pixel;
+}
+.btn {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 1s;
+}
+.btn:hover {
+    color: #131313;
+    background-color: white;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Центрируем содержимое по горизонтали */
+    background-color: #f8f9fa; /* Цвет фона футера */
+    padding: 5px 0; /* Отступы сверху и снизу */
+}
+.center{
+    width: 50%; /* Задаем ширину формы */
+    margin: 5rem auto; /* Автоматический отступ слева и справа делает форму по центру */
+    text-align: center; /* Центрируем текст внутри формы */
+}
+
+.center div {
+    margin-bottom: 10px; /* Отступ между элементами формы */
+}
+
+/* Existing CSS */
+
+.anime-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    border: #131313;
+    border-width: 4px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.anime_form{
+    flex-direction:row;
+}
+
+#anime_search {
+    border-radius: 20px 0 0 20px;
+    padding: 10px;
+    width: 800px;
+    outline: none;
+}
+
+form button {
+    background-color: #333;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.type2_button{
+    border-radius: 20px 20px 20px 20px;
+    width: 100px;
+    margin: 10px auto; /* Центрируем кнопку по горизонтали */
+    display: block; 
+}
+
+form button:hover {
+    background-color: #3d823f;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.logo img {
+    width: 50px; /* Adjust the width of the logo as needed */
+    vertical-align: middle;
+    border-radius: 20%;
+}
+ul {
+    list-style-type: none;
+}
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f2f2f2;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
+.update-form, .delete-form, .create-form {
+    margin-bottom: 10px;
+}
+
+.update-button, .delete-button, .create-button {
+    margin-top: 10px;
+}
+
+.ind img {
+    border-radius: 3px;
+    margin-top: 10px;
+    border-width: 3px;
+    border-color: #131313;
+}
+.ind .h{
+    margin-top: 40px;
+    text-align: center;
+}
+.container .j  {
+    text-align: center;
+}

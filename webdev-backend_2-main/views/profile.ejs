@@ -1,0 +1,36 @@
+<%- include('header') %>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <form action="/profile/pass" method="POST">
+                <input type="password" name="password" placeholder="Old Password">
+                <input type="password" name="password2" placeholder="New Password">
+                <input type="password" name="password3" placeholder="Сonfirm New Password">
+                <button class="type2_button" type="submit">Change Password</button>
+            </form>
+            <!-- Форма для удаления аккаунта -->
+        </div>
+        <div class="col-lg-2"><br></div>
+        <div class="col-lg-4">
+            <h1>User Profile</h1>
+    <h3 style="color: rgb(5, 5, 5);">Welcome, <%= username %>!</h3>
+
+    <!-- Error message section -->
+    <% if (typeof errorMessage !== 'undefined') { %>
+        <p style="color: red;"><%= errorMessage %></p>
+    <% } %>
+    <% if (typeof successMessage !== 'undefined') { %>
+        <p style="color: green;"><%= successMessage %></p>
+    <% } %>
+        </div>
+        <div class="col-lg-3">
+            <form action="/profile/delete" method="POST">
+                <button class="type2_button" type="submit">Delete Account</button>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+<%- include('footer') %>

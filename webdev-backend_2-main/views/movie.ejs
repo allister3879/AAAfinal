@@ -1,0 +1,25 @@
+<%- include('header') %>
+
+<form class="anime_form" action="/movie" method="POST">
+  <input type="text" id="anime_search" name="search" placeholder="Search">
+  <button type="submit">Search</button>
+</form>
+
+<div class="anime-cards">
+  <% if (movieData) { %>
+    <% movieData.forEach(anime => { %>
+      <div class="card">
+        <img src="https://image.tmdb.org/t/p/original/<%= anime.poster_path %>" alt="<%= anime.title %>">
+        <div class="card-body">
+          <h5 class="card-title"><%= anime.title ? anime.title : 'N/A' %></h5>
+          <p class="card-text">Vote average: <%= anime.vote_average ? anime.vote_average : 'N/A' %></p>
+          <p class="card-text">Popularity: <%= anime.popularity ? anime.popularity : 'N/A' %></p>
+          <p class="card-text">Release date: <%= anime.release_date ? anime.release_date : 'N/A' %></p>
+        </div>
+      </div>
+    <% }) %>
+  <% } %>
+</div>
+
+
+<%- include('footer') %>
